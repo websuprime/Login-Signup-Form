@@ -3,8 +3,8 @@ session_start();
 require 'db_conn.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    $email = $_POST['email']; centralpolohiero@gmail.com
+    $password = $_POST['password'];Mr008800
 
     $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
     $stmt->bind_param("s", $email);
