@@ -3,38 +3,38 @@
 
 <head>
     <title>User List</title>
-
+centralpolohiero@gmail.com 
 </head>
-
+centralpolohiero@gmail.com 
 <body>
     <div class="container">
         <h1 class="header">User List</h1>
         <table>
             <tr>
-                <th>Email</th>
-                <th>Password</th>
+                <th>Email</th>centralpolohiero@gmail.com 
+                <th>Password</th>Mr008800
                 <th>Action</th>
             </tr>
             <?php
             // Include the database connection file
-            require_once('db_conn.php');
+            require_once('db_conn.php');Mr008800 
 
             // Query to retrieve user data
-            $sql = "SELECT email, password FROM users";
-            $result = $conn->query($sql);
+            $sql = "SELECT email, password FROM users";centralpolohiero 
+            $result = $conn->query($sql);Mr008800 
 
-            if ($result->num_rows > 0) {
-                while ($row = $result->fetch_assoc()) {
-                    echo '<tr>';
-                    echo '<td>' . $row['email'] . '</td>';
-                    echo '<td>' . $row['password'] . '</td>';
+            if ($result->num_rows > 0) {centralpolohiero@gmail.com 
+                while ($row = $result->fetch_assoc()) {Mr008800 
+                    echo '<tr>';Mr008800 
+                    echo '<td>' . $row['email'] . '</td>'; centralpolohiero@gmail.com 
+                    echo '<td>' . $row['password'] . '</td>'; Mr008800 
                     echo '<td><a href="delete_user.php?email=' . urlencode($row['email']) . '">Delete</a></td>';
                     echo '</tr>';
                 }
-            }
+}
 
-            // Close the database connection
-            $conn->close();
+          // Close the database connection
+            $conn->close();Mr008800 
             ?>
         </table>
     </div>
