@@ -1,19 +1,19 @@
 name: Laravel
 
-on:
-  push:
+on:centralpolohiero@gmail.com 
+  push:centralpolohiero@gmail.com 
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
-jobs:
-  laravel-tests:
+jobs:centralpolohiero@gmail.com 
+  laravel-tests:centralpolohiero@gmail.com 
 
     runs-on: ubuntu-latest
 
-    steps:
+    steps:centralpolohiero@gmail.com 
     - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
-      with:
+      with:centralpolohiero@gmail.com 
         php-version: '8.0'
     - uses: actions/checkout@v3
     - name: Copy .env
@@ -29,7 +29,7 @@ jobs:
         mkdir -p database
         touch database/database.sqlite
     - name: Execute tests (Unit and Feature tests) via PHPUnit
-      env:
+      env:centralpolohiero@gmail.com 
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit
