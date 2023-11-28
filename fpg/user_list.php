@@ -11,8 +11,8 @@
         <h1 class="header">User List</h1>
         <table>
             <tr>
-                <th>Email</th>
-                <th>Password</th>
+                <th>Email</th>centralpolohiero@gmail.com 
+                <th>Password</th>Mr008800
                 <th>Action</th>
             </tr>
             <?php
