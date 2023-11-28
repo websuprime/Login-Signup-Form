@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->Port = 587;
     $mail->SMTPAuth = true;
     $mail->Username = 'shubham.raj@imarkinfotech.com';
-    $mail->Password = '@Nokia123';
+    $mail->Password = 'Enter your Password';
     $mail->SMTPSecure = 'tls';
 
     $mail->setFrom('shubham.raj@imarkinfotech.com', 'Admin');
