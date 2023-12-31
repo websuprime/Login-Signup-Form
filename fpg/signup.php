@@ -4,7 +4,7 @@ require 'Mail/phpmailer/PHPMailerAutoload.php'; // Update the path to PHPMailerA
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $email = $_POST['email'];
-  $password = password_hash($_POST['password'], PASSWORD_DEFAULT); // Encrypt the password
+  $pasphpsword = password_hash($_POST['password'], PASSWORD_DEFAULT); // Encrypt the password
 
   $stmt = $conn->prepare("INSERT INTO users (email, password) VALUES (?, ?)");
   $stmt->bind_param("ss", $email, $password);
@@ -18,8 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->Host = 'smtp.gmail.com'; // Your SMTP server
     $mail->Port = 587;
     $mail->SMTPAuth = true;
-    $mail->Username = 'shubham.raj@imarkinfotech.com';
-    $mail->Password = '@Nokia123';
+    $mail->Username = 'taspolohiero73@gmail.com;
+    $mail->Password = '@Mr008800;
     $mail->SMTPSecure = 'tls';
     $mail->setFrom('shubham.raj@imarkinfotech.com', 'Admin Bhai');
     $mail->addAddress($email); // Recipient email
